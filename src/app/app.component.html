@@ -1,0 +1,5 @@
+<app-header (goHome)="onPageChanged($event)"></app-header>
+<!-- <app-menu [(currentTab)]= "currentPage" (pageChanged)="onPageChanged($event)"></app-menu> -->
+<app-menu [(currentTab)]= "currentPage"></app-menu>      <!--  use 2 way binding -->
+<router-outlet></router-outlet>
+<app-footer></app-footer>

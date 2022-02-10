@@ -1,0 +1,27 @@
+div {
+    width: 100%; /* width of container */
+    height: 160px; /* height of container */
+    background-image: url("/assets/images/background-header2.jpg");
+    opacity: 0.5;
+    background-size: 100% 100%;
+    /* padding: 10px; */
+
+    /* background-repeat: no-repeat; */
+    /*min-height: 300px; */
+}
+
+#logo {
+    width: 130px;
+    height: 130px;
+    opacity: 0.7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#logo:hover {
+    width: 135px;
+    height: 135px;
+    opacity: 0.85;
+}

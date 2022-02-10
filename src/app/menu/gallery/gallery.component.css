@@ -1,0 +1,19 @@
+figure {
+    text-align: center;
+}
+.my-row {
+    margin: 15px;
+}
+
+.my-img {
+    height: 250px;
+    width: 375px;
+}
+
+.my-img:hover {
+    border: 2px solid #d0cece;;
+}
+
+.my-col:hover {
+    transform: scale(1.06)
+}
