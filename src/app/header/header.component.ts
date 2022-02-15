@@ -7,17 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  @Output() goHome = new EventEmitter<string>();
   
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  changeToHome() {
-
-    this.goHome.emit('home');
   }
 
 }

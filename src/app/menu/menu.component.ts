@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router,NavigationEnd  } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 
 @Component({
@@ -8,13 +10,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  // @Output() pageChanged = new EventEmitter<string>();
-  // @Input() currentTab: string;
-
-
-  // use 2 way binding
-  @Input() currentTab: string;
-  @Output() currentTabChange = new EventEmitter<string>();
+  private currentTab: string;
 
   tabs: string[] = [
     'about',
@@ -23,8 +19,9 @@ export class MenuComponent implements OnInit {
     'gift-card'
   ]
 
-  constructor() {
-    
+  constructor( private router: Router) {
+    router.events.pipe(filter(event => event instanceof NavigationEnd)) //the filter doesnt wrriten as a callback, why suold use the pipe if the events allready return Observable
+    .subscribe((event: NavigationEnd)=> {this.currentTab = event.url.replace("/", "")}) //find different method to adjust url
    }
 
   ngOnInit(): void {

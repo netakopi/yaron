@@ -1,9 +1,11 @@
 <nav>
     <a *ngFor="let tab of tabs" 
-    routerLink={{tab}} [ngClass]="{'active': currentTab === tab}" (click)="currentTabChange.emit(tab)"> {{tab}}</a> 
+    routerLink={{tab}} [ngClass]="{'active': currentTab === tab}"> {{tab}}</a> 
 
     <!-- <a routerLink="about" [ngClass]="{'active': currentTab === 'about'}" (click)="pageChanged.emit('about')"> About</a>
     <a routerLink="gallery" [ngClass]="{'active': currentTab === 'gallery'}" (click)="changePage('gallery')"> Gallery </a>
     <a routerLink="play-room" [ngClass]="{'active': currentTab === 'play-room'}" (click)="changePage('play-room')"> Play Room</a>
    <a routerLink="gift-card" [ngClass]="{'active': currentTab === 'gift-card'}" (click)="changePage('gift-card')"> Gift Card</a> -->
 </nav>
+
+<!-- currentTab??? -->
