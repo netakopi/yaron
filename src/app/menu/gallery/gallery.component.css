@@ -1,0 +1,30 @@
+
+.gallery-img-container {
+    margin: 7px;
+    border: 2px solid rgba(128, 128, 128, 0.447);
+    /* display: grid; */
+    padding: 7px;
+    width: 20%;
+}
+
+/* how to present few imges on one line like grid? */
+/* design fonts */
+
+.gallery-img-container:hover {
+    margin: 7px;
+    border: 2px solid rgba(52, 50, 50, 0.701);
+    /* display: grid; */
+    padding: 7px;
+    width: 20%;
+}
+
+.gallery-img {
+    /* max-width: 300px;
+    max-height: 300px; */
+    width: 100%;
+    height: auto;
+}
+
+.gallery-img-desc {
+    text-align: center;
+}

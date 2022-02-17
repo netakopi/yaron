@@ -10,3 +10,11 @@
     </div>
 
 </div> -->
+<div *ngFor="let image of images" class="gallery-img-container"> 
+  <a>
+    <img src={{relativePath+image.path}} alt={{image.name}} class="gallery-img" > 
+  </a>
+  <div class="gallery-img-desc">{{image.name}}</div>
+</div>
+
+<!-- create a modal for each img -->
