@@ -1,30 +1,33 @@
-
-.gallery-img-container {
-    margin: 7px;
-    border: 2px solid rgba(128, 128, 128, 0.447);
-    /* display: grid; */
-    padding: 7px;
-    width: 20%;
+.container{
+    padding: 20px;
 }
 
-/* how to present few imges on one line like grid? */
-/* design fonts */
-
-.gallery-img-container:hover {
-    margin: 7px;
-    border: 2px solid rgba(52, 50, 50, 0.701);
-    /* display: grid; */
-    padding: 7px;
-    width: 20%;
+.container ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.gallery-img {
-    /* max-width: 300px;
-    max-height: 300px; */
+.container ul li{
+    width: 29%;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+.container ul li .img-container{
+    height: 200px; 
+}
+
+.container ul li .img-container img{
+    object-fit: contain;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-.gallery-img-desc {
-    text-align: center;
+.container ul li span{
+    text-align: left;
 }

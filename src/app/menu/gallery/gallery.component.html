@@ -1,20 +1,27 @@
 <p>Gallery Works</p>
-<!-- <div class="container-fluid">
-    <div class="row my-row justify-content-center">
-        <div  *ngFor="let image of images" class="col-sm-6 col-md-4 col-lg-3 my-col">
-            <figure>
-              <img src={{relativePath+image.path}} class="img-thumbnail my-img">
-              <figcaption>{{image.name}}</figcaption>
-            </figure>
-          </div>
-    </div>
 
-</div> -->
-<div *ngFor="let image of images" class="gallery-img-container"> 
+
+
+<div class="container">
+    <ul class="">
+        <li  *ngFor="let image of images">
+              <div class="img-container">
+                <img src={{relativePath+image.path}} class="img-thumbnail my-img">
+              </div>
+              <span>{{image.name}}</span>
+        </li>
+      </ul>
+
+</div>
+
+
+<!-- <div *ngFor="let image of images" class="gallery-img-container"> 
   <a>
     <img src={{relativePath+image.path}} alt={{image.name}} class="gallery-img" > 
   </a>
   <div class="gallery-img-desc">{{image.name}}</div>
-</div>
+</div> -->
 
 <!-- create a modal for each img -->
+
+

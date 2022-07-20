@@ -1,0 +1,14 @@
+<header>
+    <div class="logo__container">
+        <a routerLink="home">
+            <img src="/assets/logo.png" alt="logo" id="logo">
+        </a>
+    </div>
+    <nav class="nav__container">
+        <ul>
+            <li *ngFor="let tab of tabs" class="nav__tab">
+                <a routerLink={{tab}}> {{tab}} </a>
+            </li>
+        </ul>
+    </nav>
+</header>

@@ -11,6 +11,10 @@ import { HeaderComponent } from './header/header.component';
 import { PlayRoomComponent } from './menu/play-room/play-room.component';
 import { GiftCardComponent } from './menu/gift-card/gift-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NewHeaderComponent } from './new-header/new-header.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,10 +26,12 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     PlayRoomComponent,
     GiftCardComponent,
-    FooterComponent  ],
+    FooterComponent,
+    NewHeaderComponent  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

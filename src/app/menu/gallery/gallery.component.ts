@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryImage } from './gallery-image.model';
 
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -8,10 +9,16 @@ import { GalleryImage } from './gallery-image.model';
 })
 export class GalleryComponent implements OnInit {
 
+  constructor() { }
+
+  ngOnInit(): void {
+
+    }
+
   relativePath: string = '../assets/images/gallery/'
   
-  // // should receive from DB??
-  // // change fonts
+  // should receive from DB??
+  // change fonts
   images: GalleryImage[] = [
     {name: 'מטוס', path:'_DN17698+.jpg'},
     {name: 'מוטו גריידר', path:'_DN17731+.jpg'},
@@ -24,9 +31,6 @@ export class GalleryComponent implements OnInit {
 
   ]
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }
